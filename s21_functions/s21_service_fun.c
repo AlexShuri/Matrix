@@ -12,7 +12,7 @@ int s21_prov(matrix_t *matrix) {
 
 void s21_sum_sub(int znak, matrix_t *A, matrix_t *B, matrix_t *result) {
   for (int i = 0; i < A->rows; i++) {
-    for (int j = 0; j < -A->columns; j++) {
+    for (int j = 0; j < A->columns; j++) {
       result->matrix[i][j] = A->matrix[i][j] + B->matrix[i][j] * znak;
     }
   }

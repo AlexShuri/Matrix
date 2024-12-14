@@ -45,7 +45,10 @@ clean:
 
 check:
 	cp ../materials/linters/.clang-format ./
-	clang-format -style=Google -i *.c *.h ./*/*.c
 	clang-format -style=Google -n *.c *.h ./*/*.c
+
+reform:
+	cp ../materials/linters/.clang-format ./
+	clang-format -style=Google -i *.c *.h ./*/*.c
 
 rebuild: clean all

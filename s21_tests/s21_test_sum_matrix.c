@@ -25,7 +25,7 @@ START_TEST(s21_sum_matrix_test_1) {
   s21_remove_matrix(&B);
   s21_remove_matrix(&X);
   s21_remove_matrix(&Z);
-  ck_assert_int_eq(res, 0);
+  ck_assert_int_eq(res, 1);
 }
 END_TEST
 
@@ -54,7 +54,7 @@ START_TEST(s21_sum_matrix_test_2) {
   s21_remove_matrix(&B);
   s21_remove_matrix(&X);
   s21_remove_matrix(&Z);
-  ck_assert_int_eq(res, 0);
+  ck_assert_int_eq(res, 1);
 }
 END_TEST
 
